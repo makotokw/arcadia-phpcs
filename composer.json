@@ -1,0 +1,25 @@
+{
+    "name": "makotokw/arcadia-phpcs",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Makoto Kawasaki",
+            "email": "makoto.kw@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/makotokw/php-coding-standards.git"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "makotokw/php-coding-standards": "^1.0",
+        "wp-coding-standards/wpcs": "^2.2",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+    }
+}
