@@ -20,6 +20,7 @@
     ],
     "require": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "friendsofphp/php-cs-fixer": "^2.18",
         "makotokw/php-coding-standards": "^1.0",
         "phpcompatibility/php-compatibility": "^9.3",
         "phpcompatibility/phpcompatibility-wp": "^2.1",
