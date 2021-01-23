@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c20fbf442c5f73873b8bff32b0321a09",
+    "content-hash": "a81ea5254c9528c7211c802f0bbf3ccc",
     "packages": [
         {
             "name": "composer/semver",
@@ -480,16 +480,16 @@
         },
         {
             "name": "makotokw/php-coding-standards",
-            "version": "v1.0",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/makotokw/php-coding-standards.git",
-                "reference": "cf1b48fa955930afa45d7e00f22c325345018627"
+                "reference": "2fffca0add3e542b106c37e0b29661e75c9210a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/makotokw/php-coding-standards/zipball/cf1b48fa955930afa45d7e00f22c325345018627",
-                "reference": "cf1b48fa955930afa45d7e00f22c325345018627",
+                "url": "https://api.github.com/repos/makotokw/php-coding-standards/zipball/2fffca0add3e542b106c37e0b29661e75c9210a3",
+                "reference": "2fffca0add3e542b106c37e0b29661e75c9210a3",
                 "shasum": ""
             },
             "require": {
@@ -498,11 +498,14 @@
             },
             "type": "phpcodesniffer-standard",
             "scripts": {
+                "setup-phpcs": [
+                    "phpcs --config-set installed_paths ../../..,../../../vendor/wp-coding-standards/wpcs"
+                ],
                 "post-install-cmd": [
-                    "\"vendor/bin/phpcs\" --config-set installed_paths ../../.."
+                    "@setup-phpcs"
                 ],
                 "post-update-cmd": [
-                    "\"vendor/bin/phpcs\" --config-set installed_paths ../../.."
+                    "@setup-phpcs"
                 ]
             },
             "license": [
@@ -516,10 +519,10 @@
             ],
             "description": "makotokw personal's sets of sniffs for PHP_CodeSniffer.",
             "support": {
-                "source": "https://github.com/makotokw/php-coding-standards/tree/v1.0",
+                "source": "https://github.com/makotokw/php-coding-standards/tree/v1.1",
                 "issues": "https://github.com/makotokw/php-coding-standards/issues"
             },
-            "time": "2019-11-29T00:33:36+00:00"
+            "time": "2021-01-23T00:52:14+00:00"
         },
         {
             "name": "php-cs-fixer/diff",
